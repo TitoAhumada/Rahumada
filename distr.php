@@ -5,5 +5,10 @@
 
     <body>
         <h1>Distribución de fechas de Licencias</h1>
+
+        <h3></h3>
+        <input type="date" name="f_otorgamiento" />
+
+        <p><button>Submit</button></p>
     </body>
 </html>
