@@ -40,6 +40,8 @@
             <input type="date" name="f_examen" />
 
             <input type="submit">
+
+            <br><br><h3>Copyright 2024, Roberto Ahumada R. </h3>;
         </form>
 
     </body>

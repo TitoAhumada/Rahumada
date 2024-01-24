@@ -59,6 +59,6 @@
 
     }
 
-    echo "Copyright 2024, Roberto Ahumada R. "
+    echo "<br><br>Copyright 2024, Roberto Ahumada R. ";
 
 ?>
