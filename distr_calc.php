@@ -83,7 +83,7 @@
     $f_nacimiento = strtotime($fecha_nacimiento);
     $f_ult_control = strtotime($fecha_ult_control);
     echo "Fecha de nacimiento: ".date("d-m-Y",$f_nacimiento). "<br>";
-    echo "Fecha de control anterior: ".date("d-m-Y",$f_ult_control). "<br>";
+    echo "Fecha de vencimiento anterior: ".date("d-m-Y",$f_ult_control). "<br>";
 
     $f_medico = strtotime($fecha_medico);
     $f_teorico = strtotime($fecha_teorico);

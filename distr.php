@@ -100,7 +100,7 @@
                 <option value="5">5 Años</option>
             </select> </h3>
 
-            <h3>Fecha de Ultimo Control: </h3>
+            <h3>Fecha de Vencimiento anterior: </h3>
             <input type="date" name="f_ultimocontrol" />
 
             <input type="submit">
