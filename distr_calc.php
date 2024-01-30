@@ -12,6 +12,11 @@
     $e = isset($_POST['e_18290']);
     $f = isset($_POST['f_18290']);
 
+    $fecha_nacimiento = $_POST['f_nacimiento'];
+    $fecha_teorico = $_POST['f_examen_teorico'];
+    $fecha_practico = $_POST['f_examen_practico'];
+    $fecha_ult_control = $_POST['f_ultimocontrol'];
+
     if ($a1 || $a2 || $a3 || $a4 || $a5 || $a1_18290 || $a2_18290){
         $licencia = 'profesional';
     }
@@ -30,7 +35,7 @@
         echo "A3 /";
     }
     if ($a4){
-        echo "A4 /";
+        echo "A4 ";
     }
     if ($a5){
         echo "A5";
@@ -74,19 +79,11 @@
     $restriccion = $_POST['restriccion'];
     echo "Posee restricción: ".$restriccion. "<br>";
     $fecha_medico = $_POST['f_examen'];
-    echo "Realizó examen médico el: ".$fecha_medico. "<tab>";
-    $fecha_teorico = $_POST['f_examen_teorico'];
-    echo " Examinador: " .$_POST['ev_medica']. "  <br>";
-    echo "Realizó examen teórico el: ".$fecha_teorico. "<tab>";
-    $fecha_practico = $_POST['f_examen_practico'];
-    echo " Examinador: " .$_POST['ex_teorico']. " <br>";
-    echo "Realizó examen práctico el: ".$fecha_practico. "<tab>";
-    $fecha_nacimiento = $_POST['f_nacimiento'];
-    echo " Examinador: " .$_POST['ex_practico']. "<br>";
-    $fecha_ult_control = $_POST['f_ultimocontrol'];
 
-    echo "Fecha de nacimiento: ".$fecha_nacimiento. "<br>";
-    echo "Fecha de control anterior: ".$fecha_ult_control. "<br>";
+    $f_nacimiento = strtotime($fecha_nacimiento);
+    $f_ult_control = strtotime($fecha_ult_control);
+    echo "Fecha de nacimiento: ".date("d-m-Y",$f_nacimiento). "<br>";
+    echo "Fecha de control anterior: ".date("d-m-Y",$f_ult_control). "<br>";
 
     $f_medico = strtotime($fecha_medico);
     $f_teorico = strtotime($fecha_teorico);
@@ -155,9 +152,16 @@
         echo "Fecha próximo examen: ".$dia_nacimiento."-".$mes_nacimiento."-".$ano_control."<br>";
     }
 
+    
+
+    echo "Realizó examen médico el: ".date("d-m-Y",$f_medico). "<tab>";
+    echo " Examinador: " .$_POST['ev_medica']. "  <br>";
+    echo "Realizó examen teórico el: ".date("d-m-Y",$f_teorico). "<tab>";
+    echo " Examinador: " .$_POST['ex_teorico']. " <br>";
+    echo "Realizó examen práctico el: ".date("d-m-Y",$f_practico). "<tab>";
+    echo " Examinador: " .$_POST['ex_practico']. "<br>";
+
    $f_medico = strtotime($fecha_medico);
-
-
 
     echo "<br><br>Copyright 2024, Roberto Ahumada R. ";
 
