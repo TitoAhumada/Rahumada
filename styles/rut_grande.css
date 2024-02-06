@@ -1,0 +1,20 @@
+
+h3 {
+    color: navy;
+    font-size: 200px;
+    text-align: center;
+    position: relative;
+    top:100px;
+}
+
+h4 {
+    color: navy;
+    font-size: 80px;
+    top:100px;
+    
+}
+
+.rut{
+    width: 400px;
+
+}
