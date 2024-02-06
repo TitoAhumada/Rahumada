@@ -1,6 +1,5 @@
 <?php
     $rut = $_POST['rut'];
-    $dv = $_POST['dv'];
 
     date_default_timezone_set('America/Santiago');
 
@@ -19,7 +18,7 @@
 
     <body>
         
-        <h3><?php echo $rut . " - ".$dv; ?> </h3>
+        <h3><?php echo $rut; ?> </h3>
         <h4><?php echo "Fecha: ".$fecha_y_hora ;?> </h4>
         <a href="rut_grande.php">Volver</a>
 
