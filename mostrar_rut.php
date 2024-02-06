@@ -17,12 +17,8 @@
     </head>
 
     <body>
-        
+        <h5><a href="rut_grande.php">Volver</a></h4>
         <h3><?php echo $rut; ?> </h3>
         <h4><?php echo "Fecha: ".$fecha_y_hora ;?> </h4>
-        <a href="rut_grande.php">Volver</a>
-
-        
-
     </body>
 </html>

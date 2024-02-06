@@ -3,18 +3,21 @@ h3 {
     color: navy;
     font-size: 200px;
     text-align: center;
-    position: relative;
-    top:100px;
+    position: static;
+    top:50px;
 }
 
 h4 {
     color: navy;
     font-size: 80px;
     top:100px;
-    
+    position: static;
 }
 
-.rut{
-    width: 400px;
-
+h5 {
+    color: navy;
+    font-size: 80px;
+    text-align: right;
+    position: static;
+    
 }
