@@ -1,6 +1,0 @@
-<h3>Tipo de Licencia:</h3>
-            <select id="tipo_lic" name="licencia">
-                <option value="profesional">Profesional</option>
-                <option value="no_profesional">No Profesional</option>
-            </select>
-
