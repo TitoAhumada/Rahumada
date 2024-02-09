@@ -14,7 +14,7 @@
     <a href="Rahumada/transito/rut_grande.php">Rut grande para Fotografía</a>
     <br>
 
-    <a href="Rahumada/transito/agenda_interna.php">Agenda Interna de Horas</a>
+    <a href="Rahumada/transito/agenda_web.php">Agenda Interna de Horas</a>
     <br>
 
 
