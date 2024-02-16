@@ -34,6 +34,7 @@
             <a href="contribuyentes_registrados.php">Ver Contribuyentes.</a> <br>
             <a href="config_agenda.php">Configurar agenda.</a> <br>
             <a href="nueva_reserva.php">Nueva Reserva.</a> <br>
+            <a href="csv_to_sql/main.php">Importar datos.</a> <br>
         </div>
 
         <div class = "agenda_diaria">
