@@ -4,4 +4,6 @@
     $pass = "kn1vwdTPavQ1aZBvZYzc";
     $db = "bml80zuneqjkcfs0mkqv";
 
+    date_default_timezone_set('America/Santiago');
+
 ?>

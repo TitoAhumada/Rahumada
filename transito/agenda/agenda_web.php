@@ -31,6 +31,7 @@
                     }
                 ?>
             </form>
+            <a href="agenda_hoy.php">Recepción de horas.</a> <br>
             <a href="contribuyentes_registrados.php">Ver Contribuyentes.</a> <br>
             <a href="config_agenda.php">Configurar agenda.</a> <br>
             <a href="nueva_reserva.php">Nueva Reserva.</a> <br>

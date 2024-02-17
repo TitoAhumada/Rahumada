@@ -11,7 +11,6 @@
             $linea = false;
             while($data = fgetcsv($fp,100,";")){
                 if($linea){
-
                     $sql_query_contribuyentes = "SELECT * FROM contribuyentes WHERE rut='".$data[8]."' ";
                     echo("Rut: ".$data[8]);
                     $resultado_sql_contribuyentes = mysqli_query($conn,$sql_query_contribuyentes);
@@ -44,13 +43,13 @@
             $linea = false;
             while($data = fgetcsv($fp,100,";")){
                 if($linea){
-                    $sql_query = "SELECT * FROM contribuyentes WHERE rut='".$data[2]."' ";
-                    echo("Rut: ".$data[2]);
+                    $sql_query = "SELECT * FROM contribuyentes WHERE rut='".$data[0]."' ";
+                    echo("Rut: ".$data[0]);
                     $resultado_sql = mysqli_query($conn,$sql_query);
                     $rowcount=mysqli_num_rows($resultado_sql);
                     echo("Row: ".$rowcount."<br>");
                     if($rowcount == 0){
-                        $sql_query = "INSERT INTO contribuyentes(rut,nombres,contacto_1) VALUES('".$data[2]."','".$data[3]."','".$data[5]."') " ;
+                        $sql_query = "INSERT INTO contribuyentes(rut,nombres,contacto_1) VALUES('".$data[0]."','".$data[1]."','".$data[3]."') " ;
                         $resultado_sql = mysqli_query($conn,$sql_query);
                     }            
                 }
