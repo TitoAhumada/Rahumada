@@ -18,7 +18,7 @@
         <header class="header">
             <div class="logo">
                 <a href="http://municipalidadovalle.cl">
-                    <img src="img/logos/Logo_transito_IMO 2023_1.jpg" alt ="Logo Municipalidad">
+                    <img src="img/logos/logo_imo_web.svg" alt ="Ilustre Municipalidad de Ovalle">
                 </a>
                 
             </div>
@@ -56,7 +56,7 @@
                 <div class="box">
                     <figure>
                         <a href="#">
-                            <img src = "img/9391707.png" alt="Logo Desarrollador">
+                            <img src = "img/logos/AGPIXLPRO_LOGO.svg" alt="Roberto Ahumada Rojas - 2024">
                         </a>
                     </figure>
                 </div>
@@ -79,7 +79,7 @@
             </div>
             
             <div class="grupo-2">
-                <small>&copy; 2024 <b>Desarrollador</b> - Todos los derechos reservados.</small>
+                <small>&copy; 2024 <b>Roberto Ahumada R.</b> - Todos los derechos reservados.</small>
             </div>
 
         </footer>
