@@ -113,6 +113,7 @@ body{
     position: absolute;
     left: 50%;
     width: 70%;
+    transform: translate(-50%,20%);
     background: #0d0d0d;
     text-align: center;
     border-collapse: collapse;
