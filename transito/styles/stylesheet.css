@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #091027;
+}
+
+.header{
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+/*HEADER LOGO */
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+/* HEADER NAVEGACION */
+
+.header .nav ul,ol{
+    list-style: none;
+    
+}
+
+.header .nav .menu li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    
+}
+
+.header .nav .menu > li {
+    float: left;
+}
+
+.header .nav .menu li a:hover{
+    background-color: #fff;
+    color: #0d0d0d;
+}
+
+.header .nav .menu li ul{
+    background-color: #0d0d0d;
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.header .nav .menu li:hover > ul{
+    display: block;
+}
+
+/* AGENDA DIARIA */
+
+/* RELOJ AGENDA */
+.agenda_diaria .wrap{
+    position:relative;
+    width: 90px;
+    max-width: 1000px;
+    margin: auto;
+    transform: translate(-150%,0%); 
+}
+
+.agenda_diaria .wrap .widget{
+    width: 400px;
+}
+
+.agenda_diaria .wrap .widget p{
+    display: inline-block;
+    line-height: 1em;
+}
+
+.agenda_diaria .wrap .widget .fecha{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 0.3125rem;
+    background-color: #0d0d0d;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+}
+
+.agenda_diaria .wrap .reloj{
+    width: 100%;
+    padding: 20px;
+    font-size: 4em;
+    text-align: center;
+    background: #0d0d0d;
+    color: #fff;
+}
+
+
+/*TABLA*/
+.agenda_diaria .tabla table{
+    position: absolute;
+    left: 50%;
+    width: 70%;
+    background: #0d0d0d;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 2px 12px #2745a8;
+    margin-bottom: 50px;
+}
+
+.agenda_diaria h3{
+    color: #fff;
+    text-align: center;
+}
+
+th,td{
+    background-color: #091027;
+    color: #fff;
+    padding: 7px 15px;
+}
+
+th{
+    background-color: #091027;
+}
+
+td{
+    background-color: #0d0d0d;
+}
+
+/*BOTONES DE ACCIÓN TABLAS */
+
+/*  PIE DE PÁGINA */
+.pie-pagina{
+    width: 100%;
+    background-color: #091027;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d0d0d;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #0d0d0d;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px){
+    .nav-links{
+        display: none;
+    }
+
+
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+        text-align: center;
+    }
+}
+

@@ -5,6 +5,8 @@
 <body>
   <h1>Veamos si funciona</h1>
   <h3>Dpto. de Tránsito</h3>
+
+  
     <a href="Rahumada/transito/distr.php">Guía Distribución de Licencias de Conducir</a><br>
     <a href="distr.php">Guía Distribución de Licencias de Conducir - local</a><br>
     <br>

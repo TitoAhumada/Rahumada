@@ -32,7 +32,11 @@
 
         pHoras.textContent = horas;
 
+        if(minutos < 10){ minutos = "0" + minutos }
+
         pMinutos.textContent = minutos;
+
+        if(segundos < 10){ segundos = "0" + segundos }
 
         pSegundos.textContent = segundos;
 
