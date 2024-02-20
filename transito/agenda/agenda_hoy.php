@@ -98,11 +98,11 @@
                     <?php while($mostrar=mysqli_fetch_array($resultado_sql)){ ?>
                         
                     <tr style="cursor:pointer" onclick="seleccionar(this,1)">
-                        <td><?php echo $mostrar['hora'] ?></td>
-                        <td><?php echo $mostrar['rut_c'] ?></td>
-                        <td><?php echo $mostrar['nombres']." ".$mostrar['apellido_p']." ".$mostrar['apellido_m']." "  ?></td> 
-                        <td><?php echo $mostrar['contacto_1'] ?></td>
-                        <td><?php echo $mostrar['tramite'] ?></td>
+                        <td><?php echo $mostrar['hora']; ?></td>
+                        <td><?php echo $mostrar['rut_c']; ?></td>
+                        <td><?php echo $mostrar['nombres']." ".$mostrar['apellido_p']." ".$mostrar['apellido_m']." ";  ?></td> 
+                        <td><?php echo $mostrar['contacto_1']; ?></td>
+                        <td><?php echo $mostrar['tramite']; ?></td>
                         <td><?php 
                                     if($mostrar['estado'] == 'Atendido'){
                                         echo "<i class='fa-solid fa-check-double'></i>";
